@@ -1,0 +1,316 @@
+/******************************************
+	           RESETS
+*******************************************/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+/******************************************
+		        DEFAULTS
+*******************************************/
+
+span {
+	color: rgb(0, 145, 214);
+	font-weight: 200;
+}
+
+strong {
+	font-weight: 900;
+}
+
+
+/******************************************
+		         LAYOUT
+*******************************************/
+
+.panel > div {
+	width: 960px;
+	margin: 0 auto;
+	min-height: 400px;
+	position: relative;
+}
+
+/*****************
+       Hero
+******************/
+
+
+.panel.hero {
+	background: radial-gradient(rgba(0, 142, 171, 0.6), rgba(0, 142, 171, 1)), url(bg.jpg);
+	background-size: 100% 100%;
+}
+
+/*Hero Slogan*/
+
+.hero .logo-bar {
+	height: 85px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.hero .logo-bar .logo {
+	font-size: 50px;
+	font-family: lobster;
+	color: white;
+}
+
+.hero > div {
+	min-height: 400px;
+	position: relative;
+}
+
+
+
+
+/*header*/
+
+.slogan {
+	position: absolute;
+	text-align: center;
+	font-family: Open Sans;
+	color: white;
+	height: 100px;
+	left: 0px;
+	right: 0px;
+	top: 265px;
+} 
+
+.slogan > div {
+	margin-top: 2px;
+	font-size: 40px;
+}
+
+
+.slogan > p {
+	font-weight: bold;
+}
+
+.search-area {
+	position: absolute;
+	text-align;
+	right: 0px;
+	top: 20px;
+}
+.search-area input {
+	background-color: transparent;
+	border: 2px solid rgb(95,181,197);
+	color: white;
+}
+
+.search-area button {
+	background-color: rgb(237,79,0);
+	color: white;
+	font-weight: bold;
+	font-family: Open Sans;
+	border: none;
+}
+
+.primary-nav {
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	position: absolute;
+	height: 50px;
+	left: 0px;
+	right: 0px;
+	top: 85px;
+}
+
+.primary-nav a {
+	color: white;
+	font-family: Open Sans;
+	text-decoration: none;
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 15px;
+}
+
+
+/******************
+    Services 
+******************/
+
+.panel.services {
+	background-color: rgb(215,225,231);
+}
+
+.services > div {
+	min-height: 750px;
+}
+
+.services .dogs {
+	background-color: white;
+	position: absolute;
+	height: 580px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	top: 170px;
+}
+
+.media-dogs {
+	font-family: Open Sans;
+	float: left;
+	width: 400px;
+	min-height: 400px;
+}
+
+.tile-dogs {
+	font-family: Open Sans;
+	float: right;
+	width: 560px;
+	min-height: 450px;
+}
+
+
+/*************************************
+            COMPONENTS
+*************************************/
+
+/*Media-dog Components*/
+
+.media-dogs .dog-pics {
+	width: 380px;
+	height: 70px;
+	display: flex;
+	margin: 10px;
+}
+
+.media-dogs .dog-pics > div {
+	height: 70px;
+	width: 70px;
+}
+
+.media-dogs .dog-pics > div:nth-child(2) {
+	background-color: rgb(232,243,249);
+	min-height: 50px;
+	padding-left: 7px;
+	flex: 1;
+}
+
+/*dog tile gallery componenets*/
+
+.tile-dogs .tile {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 0 0 10px;
+	width: 150px;
+	min-height: 200px;
+}
+
+.tile-dogs .tile .graphic {
+	height: 140px;
+}
+
+.tile-dogs .tile .dog-name {
+	background-color: rgb(140,209,51);
+	padding: 3px;
+	min-height: 20px;
+}
+
+.tile-dogs .tile .content {
+	background-color: rgb(227,239,213);
+	vertical-align: top;
+	padding: 5px;
+	min-height: 40px;
+}
+
+.actions, .dogs {
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
+}
+
+.actions-bar {
+	height: 170px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+.actions-bar div {
+	height: 180px;
+	width: 300px;
+	background-color: white;
+	position: absolute;
+}
+
+
+.actions-bar .help {
+	left: 15px;	bottom: 15px;
+	border-top: 4px solid red;
+}
+
+.actions-bar .food {
+	left: 330px;
+	right: 310px;
+	bottom: 15px;
+	border-top: 4px solid rgb(128,203,36);	
+}
+
+.actions-bar .china {
+	right: 15px;
+	bottom: 15px;
+	border-top: 4px solid rgb(4,149,223);
+}
+
+.actions-bar .actions {
+	box-sizing: border-box;
+	text-align: center;
+	padding: 10px 6px 6px 6px;
+	font-family: Open Sans;
+}
+
+.actions-bar .actions a {
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 1px;
+}
+
+.actions-bar .help a {
+	border: 2px solid rgb(230,66,0);
+	color: rgb(230,66,0);
+	padding: 4px;
+
+}
+
+.actions-bar .food a {
+	border: 2px solid rgb(122,202,19);
+	color: rgb(122,202,19);
+	padding: 2px;
+}
+
+.actions-bar .china a {
+	border: 2px solid rgb(4,129,223);
+	color: rgb(4,129,223);
+	padding: 4px;
+}
+
+/*Utilities*/
+
+.Ralf, .Max, .Rudy {
+	background-size: 100% 100%;
+}
+
+.Ralf {
+	background-image: url('dog1.png');
+}
+
+.Max {
+	background-image: url('dog2.png')
+}
+
+.Rudy {
+	background-image: url('dog3.png')
+}
+
